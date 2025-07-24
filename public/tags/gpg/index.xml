@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpg on OuterRealm</title>
+    <link>http://localhost:1313/tags/gpg/</link>
+    <description>Recent content in Gpg on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pass: The Standard Unix Password Manager</title>
+      <link>http://localhost:1313/posts/pass-password-manager/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pass-password-manager/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter &lt;strong&gt;Pass&lt;/strong&gt;, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: &lt;strong&gt;GPG&lt;/strong&gt; for encryption and &lt;strong&gt;Git&lt;/strong&gt; for version control.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Overview of XMPP (Extensible Messaging and Presence Protocol) - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Introduction
+XMPP (Extensible Messaging and Presence Protocol) is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/xmpp-overview/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Overview of XMPP (Extensible Messaging and Presence Protocol)">
+  <meta property="og:description" content="Introduction XMPP (Extensible Messaging and Presence Protocol) is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:tag" content="XMPP">
+    <meta property="article:tag" content="Messaging">
+    <meta property="article:tag" content="FOSS">
+    <meta property="article:tag" content="Protocol">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Overview of XMPP (Extensible Messaging and Presence Protocol)">
+  <meta name="twitter:description" content="Introduction XMPP (Extensible Messaging and Presence Protocol) is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/contact">Contact</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Overview of XMPP (Extensible Messaging and Presence Protocol)</h1>
+          <div class="meta">Posted on Jul 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="introduction">Introduction</h2>
+<p><strong>XMPP (Extensible Messaging and Presence Protocol)</strong> is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems.</p>
+<h2 id="why-use-xmpp">Why Use XMPP?</h2>
+<ul>
+<li><strong>Decentralized</strong>: Anyone can run an XMPP server.</li>
+<li><strong>Open Standard</strong>: Maintained by the IETF and supported by many open-source tools.</li>
+<li><strong>Extensible</strong>: Via XEPs (XMPP Extension Protocols), it supports features like group chat, file transfer, encryption, etc.</li>
+<li><strong>Federated</strong>: Similar to email, you can communicate across servers.</li>
+</ul>
+<h2 id="how-it-works">How It Works</h2>
+<p>XMPP operates over TCP and uses XML to encapsulate messages. A typical XMPP address looks like an email address:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>username@server.tld
+</span></span></code></pre></div><p>Clients connect to an XMPP server, authenticate with credentials, and then exchange XML stanzas (units of communication) representing presence, messages, or queries.</p>
+<h2 id="example-use-cases">Example Use Cases</h2>
+<h3 id="1-chat-with-a-contact">1. Chat with a Contact</h3>
+<p>Using a client like <a href="https://profanity-im.github.io/">Profanity</a> (CLI) or <a href="https://gajim.org/">Gajim</a> (GUI), you can:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Profanity CLI command</span>
+</span></span><span style="display:flex;"><span>/roster add alice@chat.example.com Alice
+</span></span><span style="display:flex;"><span>/msg alice@chat.example.com Hey, are you around?
+</span></span></code></pre></div><h3 id="2-join-a-group-chat-muc---multi-user-chat">2. Join a Group Chat (MUC - Multi-User Chat)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/join chatroom@conference.example.com
+</span></span></code></pre></div><h3 id="3-enable-omemo-encryption-profanity">3. Enable OMEMO Encryption (Profanity)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/omemo enable alice@chat.example.com
+</span></span></code></pre></div><h3 id="4-send-a-file">4. Send a File</h3>
+<p>Using a GUI client like Gajim or a terminal client with file support:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/sendfile alice@chat.example.com path/to/file.txt
+</span></span></code></pre></div><h2 id="pros-and-cons">Pros and Cons</h2>
+<h3 id="-pros">✅ Pros</h3>
+<ul>
+<li><strong>Open &amp; Free</strong>: No licensing restrictions.</li>
+<li><strong>Decentralized</strong>: No single point of failure.</li>
+<li><strong>Secure</strong>: Supports TLS, SASL, and end-to-end encryption with OMEMO/PGP.</li>
+<li><strong>Cross-platform</strong>: Clients exist for all major platforms.</li>
+<li><strong>Extensible</strong>: Rich support via XEPs for modern features.</li>
+</ul>
+<h3 id="-cons">❌ Cons</h3>
+<ul>
+<li><strong>Complex Setup</strong>: Hosting your own server may be technically challenging.</li>
+<li><strong>Fragmentation</strong>: Not all clients support every XEP, leading to inconsistent experiences.</li>
+<li><strong>Less Popular</strong>: Lower user base compared to mainstream alternatives like Signal or WhatsApp.</li>
+<li><strong>XML Overhead</strong>: May be less efficient for resource-constrained environments.</li>
+</ul>
+<h2 id="recommended-clients">Recommended Clients</h2>
+<ul>
+<li><strong>Profanity</strong> (CLI) – great for terminal users.</li>
+<li><strong>Gajim</strong> (GUI) – feature-rich and user-friendly.</li>
+<li><strong>Dino</strong> – modern GTK-based client.</li>
+<li><strong>Conversations</strong> (Android) – well-maintained and supports OMEMO.</li>
+<li><strong>Snikket</strong> – focuses on user-friendliness and easy deployment.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>XMPP remains a powerful, decentralized messaging protocol with strong support in the FOSS community. It may not be the easiest to set up or use for casual users, but it offers unmatched flexibility and control for those who value open standards and private infrastructure.</p>
+<p>Whether you want to run your own secure messaging platform or contribute to decentralized communication efforts, XMPP is a solid choice.</p>
+<hr>
+<p>Interested in trying it? Start by installing <strong>Prosody</strong>, <strong>ejabberd</strong>, or <strong>Snikket</strong>, and connect with a client of your choice!</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/xmpp">XMPP</a></li>
+              
+              <li><a href="/tags/messaging">Messaging</a></li>
+              
+              <li><a href="/tags/foss">FOSS</a></li>
+              
+              <li><a href="/tags/protocol">Protocol</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

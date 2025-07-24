@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manager on OuterRealm</title>
+    <link>http://localhost:1313/tags/manager/</link>
+    <description>Recent content in Manager on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Mon, 05 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pass - Unix Password Manager</title>
+      <link>http://localhost:1313/posts/pass-unix/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pass-unix/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Home&lt;/strong&gt;: &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;https://www.passwordstore.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Pass is a very simple password manager for Unix(like) systems. In fact all pass does is encrypt your passwords inside a gpg encrypted file and organizes them in a meaningful way. One thing to note is that pass&amp;rsquo;s built in interface is strictly for command-line use only, though some third party &lt;a href=&#34;https://www.passwordstore.org/#other&#34;&gt;GUI&amp;rsquo;s&lt;/a&gt; are out there.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

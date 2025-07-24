@@ -1,0 +1,42 @@
+baseURL = 'https://outerrealm.net/'
+languageCode = 'en-us'
+title = 'OuterRealm'
+theme = 'archie'
+
+copyright = "© OuterRealm"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginagte=3
+summaryLength = 5
+
+[params]
+	mode="toggle"
+	useCDN=false
+	subtitle = "Tech. Freedom. Simplicity."
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 4
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 5

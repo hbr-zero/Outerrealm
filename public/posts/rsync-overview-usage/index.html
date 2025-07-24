@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rsync: Powerful File Transfer and Synchronization Tool - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore Rsync, the robust file synchronization and transfer utility. Learn basic to advanced usage with practical examples, and review its pros and cons." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/rsync-overview-usage/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Rsync: Powerful File Transfer and Synchronization Tool">
+  <meta property="og:description" content="Explore Rsync, the robust file synchronization and transfer utility. Learn basic to advanced usage with practical examples, and review its pros and cons.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Rsync">
+    <meta property="article:tag" content="Backup">
+    <meta property="article:tag" content="File-Transfer">
+    <meta property="article:tag" content="Cli">
+    <meta property="article:tag" content="Tutorial">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rsync: Powerful File Transfer and Synchronization Tool">
+  <meta name="twitter:description" content="Explore Rsync, the robust file synchronization and transfer utility. Learn basic to advanced usage with practical examples, and review its pros and cons.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/contact">Contact</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Rsync: Powerful File Transfer and Synchronization Tool</h1>
+          <div class="meta">Posted on Jul 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="overview">Overview</h2>
+<p><code>rsync</code> is a fast, reliable, and versatile file-copying tool commonly used on Unix-like systems. It efficiently transfers and synchronizes files between machines and directories by only copying the differences between source and destination. Whether you&rsquo;re backing up a home directory, syncing production servers, or replicating data across systems, <code>rsync</code> is a must-have utility in your toolbox.</p>
+<hr>
+<h2 id="why-use-rsync">Why Use Rsync?</h2>
+<ul>
+<li>Efficient: Only transfers changed blocks.</li>
+<li>Flexible: Works over SSH or directly between local directories.</li>
+<li>Powerful: Supports filters, compression, and bandwidth throttling.</li>
+<li>Reliable: Retains file permissions, timestamps, symbolic links, and ownership.</li>
+</ul>
+<hr>
+<h2 id="basic-usage">Basic Usage</h2>
+<h3 id="local-file-sync">Local File Sync</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -avh ~/Documents/ /mnt/backup/Documents/
+</span></span></code></pre></div><ul>
+<li><code>-a</code>: Archive mode (preserves permissions, symbolic links, timestamps, etc.)</li>
+<li><code>-v</code>: Verbose</li>
+<li><code>-h</code>: Human-readable numbers (like KB, MB)</li>
+</ul>
+<h3 id="remote-file-sync-over-ssh">Remote File Sync Over SSH</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -avz -e ssh ~/Projects/ user@remote.server:/home/user/Projects/
+</span></span></code></pre></div><ul>
+<li><code>-z</code>: Compress data during transfer</li>
+<li><code>-e ssh</code>: Use SSH as the transport protocol</li>
+</ul>
+<hr>
+<h2 id="intermediate-examples">Intermediate Examples</h2>
+<h3 id="delete-files-that-no-longer-exist-on-the-source">Delete Files That No Longer Exist on the Source</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --delete ~/Media/ /mnt/media_backup/
+</span></span></code></pre></div><blockquote>
+<p>The <code>--delete</code> flag ensures that files deleted on the source are also deleted on the destination.</p></blockquote>
+<h3 id="exclude-specific-files-or-directories">Exclude Specific Files or Directories</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --exclude <span style="color:#e6db74">&#39;*.mp4&#39;</span> --exclude <span style="color:#e6db74">&#39;node_modules/&#39;</span> ~/Projects/ /mnt/backup/
+</span></span></code></pre></div><h3 id="dry-run-simulate-before-execution">Dry Run (Simulate Before Execution)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --dry-run ~/Photos/ /mnt/photo_backup/
+</span></span></code></pre></div><hr>
+<h2 id="advanced-usage">Advanced Usage</h2>
+<h3 id="throttle-bandwidth-usage">Throttle Bandwidth Usage</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -avz --bwlimit<span style="color:#f92672">=</span><span style="color:#ae81ff">5000</span> ~/Videos/ remote:/data/backup/
+</span></span></code></pre></div><blockquote>
+<p><code>--bwlimit=5000</code> limits the bandwidth to ~5MB/s</p></blockquote>
+<h3 id="sync-using-rsync-daemon-for-persistent-services">Sync Using Rsync Daemon (for persistent services)</h3>
+<p>Set up <code>/etc/rsyncd.conf</code> on the server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[files]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/srv/rsync/files
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    read only = no
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    list = yes</span>
+</span></span></code></pre></div><p>Then use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av rsync://remote.server/files /local/dir/
+</span></span></code></pre></div><h3 id="backup-with-timestamped-directories">Backup with Timestamped Directories</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -a ~/Documents/ <span style="color:#e6db74">&#34;/mnt/backups/Documents-</span><span style="color:#66d9ef">$(</span>date +%Y-%m-%d<span style="color:#66d9ef">)</span><span style="color:#e6db74">/&#34;</span>
+</span></span></code></pre></div><blockquote>
+<p>Useful for daily backups with clear naming.</p></blockquote>
+<hr>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<h3 id="pros">Pros</h3>
+<ul>
+<li>✅ Fast, only transfers deltas</li>
+<li>✅ Preserves all file metadata</li>
+<li>✅ Works over SSH securely</li>
+<li>✅ Ideal for scripting and automation</li>
+<li>✅ Highly configurable</li>
+</ul>
+<h3 id="cons">Cons</h3>
+<ul>
+<li>❌ Not ideal for syncing databases or locked files</li>
+<li>❌ Can be complex for new users</li>
+<li>❌ No built-in encryption at rest (use filesystem or SSH layer for that)</li>
+<li>❌ Windows support is limited without WSL or Cygwin</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p><code>rsync</code> remains one of the most powerful and efficient tools for syncing and backing up files. From simple directory copies to complex remote backups with bandwidth throttling and exclusion rules, <code>rsync</code> can handle it all. It&rsquo;s a staple for sysadmins, developers, and power users alike.</p>
+<hr>
+<p><strong>Further Reading</strong>:</p>
+<ul>
+<li><a href="https://linux.die.net/man/1/rsync">rsync man page</a></li>
+<li><a href="https://wiki.archlinux.org/title/rsync">Efficient Backups with rsync</a></li>
+</ul>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/linux">linux</a></li>
+              
+              <li><a href="/tags/rsync">rsync</a></li>
+              
+              <li><a href="/tags/backup">backup</a></li>
+              
+              <li><a href="/tags/file-transfer">file-transfer</a></li>
+              
+              <li><a href="/tags/cli">cli</a></li>
+              
+              <li><a href="/tags/tutorial">tutorial</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

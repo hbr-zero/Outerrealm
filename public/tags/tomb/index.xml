@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tomb on OuterRealm</title>
+    <link>http://localhost:1313/tags/tomb/</link>
+    <description>Recent content in Tomb on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tomb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tomb: A Simple and Secure Linux Encryption Tool</title>
+      <link>http://localhost:1313/posts/2025-07-23-tomb-encryption-full-overview/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-07-23-tomb-encryption-full-overview/</guid>
+      <description>&lt;h2 id=&#34;what-is-tomb&#34;&gt;What is Tomb?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tomb&lt;/strong&gt; is a free and open-source encryption tool for GNU/Linux that allows users to create encrypted storage containers (called &lt;em&gt;tombs&lt;/em&gt;) and protect their keys with GnuPG. It’s designed to be &lt;strong&gt;scriptable&lt;/strong&gt;, &lt;strong&gt;lightweight&lt;/strong&gt;, and &lt;strong&gt;secure&lt;/strong&gt;, making it ideal for privacy-focused users who prefer the terminal.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

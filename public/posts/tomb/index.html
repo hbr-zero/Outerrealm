@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tomb - Encryption Tool - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Home: https://dyne.org/tomb/
+Tomb is a command line encryption tool that makes it very easy to quickly encrypt files. Basically Tomb creates encrypted storage folders for you to place files in." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/tomb/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Tomb - Encryption Tool">
+  <meta property="og:description" content="Home: https://dyne.org/tomb/
+Tomb is a command line encryption tool that makes it very easy to quickly encrypt files. Basically Tomb creates encrypted storage folders for you to place files in.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-05T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tomb - Encryption Tool">
+  <meta name="twitter:description" content="Home: https://dyne.org/tomb/
+Tomb is a command line encryption tool that makes it very easy to quickly encrypt files. Basically Tomb creates encrypted storage folders for you to place files in.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Tomb - Encryption Tool</h1>
+          <div class="meta">Posted on May 5, 2025</div>
+        </div>
+        
+        <section class="body">
+          <p><strong>Home</strong>: <a href="https://dyne.org/tomb/">https://dyne.org/tomb/</a></p>
+<p>Tomb is a command line encryption tool that makes it very easy to quickly encrypt files. Basically Tomb creates encrypted storage folders for you to place files in.</p>
+<h2 id="installation">Installation</h2>
+<p>To install pass use your systems package manger. See below for some examples.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">## Arch</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S tomb
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Void</span>
+</span></span><span style="display:flex;"><span>sudo xbps-install -S tomb
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Debian/Ubuntu</span>
+</span></span><span style="display:flex;"><span>sudo apt install tomb
+</span></span></code></pre></div><h2 id="configuration">Configuration</h2>
+<p>No configuration is needed.</p>
+<h2 id="usage">Usage</h2>
+<p>The below are instructions on how to create a secured folder and the encryption key that you will use to secure the folder. Note that you can name your secured folder and key anything you want. Note that due to permission problems it is recommended that you use <strong>&ldquo;sudo&rdquo;</strong> when executing tomb.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command creates your secured folder, &#34;-s&#34; sets the size in MiB.</span>
+</span></span><span style="display:flex;"><span>sudo tomb dig -s <span style="color:#ae81ff">100</span> yoursecret.tomb
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command creates your encryption key to use on your secured folder.</span>
+</span></span><span style="display:flex;"><span>sudo tomb forge yoursecret.tomb.key
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command secures your secured folder with your encryption key.</span>
+</span></span><span style="display:flex;"><span>sudo tomb lock yoursecret.tomb -k yoursecret.tomb.key
+</span></span></code></pre></div><p>The below instruction is for how to unlock and open your secured folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command opens your secured folder using your encryption key. The &#34;-k&#34; Specifies what key to use.</span>
+</span></span><span style="display:flex;"><span>sudo tomb open yoursecret.tomb -k yoursecret.tomb.key
+</span></span></code></pre></div><p>The below instructions will show you how to securely close your folder after using them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command closes your secured folder.</span>
+</span></span><span style="display:flex;"><span>sudo tomb close
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This command force closes all your secured folders.</span>
+</span></span><span style="display:flex;"><span>sudo tomb slam all
+</span></span></code></pre></div><h3 id="usage---hiding-key-in-an-image-optional">Usage - Hiding Key in an Image (Optional)</h3>
+<p>One cool thing that Tomb lets you do is to hide your encryption key inside an image. To do this you first must have <a href="https://steghide.sourceforge.net/">Steghide</a> installed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tomb bury -k yoursecret.tomb.key someimage.jpg
+</span></span></code></pre></div><p>Now to open your secured folder with the image instead of the encryption key follow the below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tomb open yoursecret.tomb -k someimage.jpg
+</span></span></code></pre></div><p>If you want to recover the encryption key from the image run the below command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tomb exhume someimage.jpg yoursecret.tomb.key
+</span></span></code></pre></div><h2 id="end">End</h2>
+<p>Things to note about Tomb are that it is a command line tool, so if that&rsquo;s not your cup of tea then it might not be for you. But if you do decide to use it know that you will be presented with a really powerful simple method to encrypted your files, Tomb has some advantages over other similar tools the biggest being that it does promote separated storage of keys. This means that unlike most other encryption tools, Tomb allows you to store your encrypted folder and the encryption keys in different locations. This can allow you to place your encryption key in a portable device and leave the encrypted folder on your local computer.</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

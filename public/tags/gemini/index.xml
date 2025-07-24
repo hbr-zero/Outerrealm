@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gemini on OuterRealm</title>
+    <link>http://localhost:1313/tags/gemini/</link>
+    <description>Recent content in Gemini on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started with the Gemini Protocol</title>
+      <link>http://localhost:1313/posts/gemini_protocol_hugo_post/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/gemini_protocol_hugo_post/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-gemini-protocol&#34;&gt;What is the Gemini Protocol?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Gemini protocol&lt;/strong&gt; is a lightweight, privacy-focused internet protocol designed to offer a middle ground between Gopher and HTTP. It emphasizes simplicity, minimalism, and user privacy. Gemini serves content in a plaintext markup format called &lt;strong&gt;Gemtext&lt;/strong&gt;, intended to be viewed with specialized browsers called &lt;strong&gt;Gemini clients&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

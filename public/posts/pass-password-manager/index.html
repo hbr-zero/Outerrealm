@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Pass: The Standard Unix Password Manager - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Introduction
+In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter Pass, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: GPG for encryption and Git for version control." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/pass-password-manager/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Pass: The Standard Unix Password Manager">
+  <meta property="og:description" content="Introduction In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter Pass, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: GPG for encryption and Git for version control.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Password Manager">
+    <meta property="article:tag" content="Gpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pass: The Standard Unix Password Manager">
+  <meta name="twitter:description" content="Introduction In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter Pass, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: GPG for encryption and Git for version control.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/contact">Contact</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Pass: The Standard Unix Password Manager</h1>
+          <div class="meta">Posted on Jul 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="introduction">Introduction</h2>
+<p>In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter <strong>Pass</strong>, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: <strong>GPG</strong> for encryption and <strong>Git</strong> for version control.</p>
+<p>Pass adheres to the Unix philosophy: do one thing well. It stores each password in its own GPG-encrypted file, making it both secure and manageable with familiar tools.</p>
+<hr>
+<h2 id="installation">Installation</h2>
+<p>To get started, install Pass and GPG:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Debian/Ubuntu</span>
+</span></span><span style="display:flex;"><span>sudo apt install pass gnupg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fedora</span>
+</span></span><span style="display:flex;"><span>sudo dnf install pass gnupg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Arch Linux</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S pass gnupg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># macOS (Homebrew)</span>
+</span></span><span style="display:flex;"><span>brew install pass gpg
+</span></span></code></pre></div><hr>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>Before using Pass, ensure you have a GPG key:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg --full-generate-key
+</span></span></code></pre></div><p>Then initialize Pass with your GPG key ID or email:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass init <span style="color:#e6db74">&#34;Your Name &lt;you@example.com&gt;&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="basic-usage">Basic Usage</h2>
+<h3 id="add-a-password">Add a Password</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass insert email/gmail
+</span></span></code></pre></div><p>It will prompt you to type and confirm the password. You can also pipe input:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;MyS3cretP@ss&#34;</span> | pass insert email/gmail
+</span></span></code></pre></div><h3 id="retrieve-a-password">Retrieve a Password</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass email/gmail
+</span></span></code></pre></div><h3 id="copy-a-password-to-clipboard-auto-clears-after-45s">Copy a Password to Clipboard (auto-clears after 45s)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass -c email/gmail
+</span></span></code></pre></div><h3 id="remove-a-password">Remove a Password</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass rm email/gmail
+</span></span></code></pre></div><h3 id="list-stored-passwords">List Stored Passwords</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass ls
+</span></span></code></pre></div><hr>
+<h2 id="advanced-usage">Advanced Usage</h2>
+<h3 id="organize-into-folders">Organize into Folders</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass insert work/github
+</span></span><span style="display:flex;"><span>pass insert personal/bank
+</span></span></code></pre></div><p>This keeps things tidy using a tree-like structure.</p>
+<h3 id="sync-with-git">Sync with Git</h3>
+<p>Initialize a Git repo to keep your password store versioned and backed up.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/.password-store
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin git@yourserver.com:password-store.git
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><h3 id="use-multiple-gpg-keys">Use Multiple GPG Keys</h3>
+<p>You can encrypt the store for multiple recipients:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass init <span style="color:#e6db74">&#34;user1@example.com&#34;</span> <span style="color:#e6db74">&#34;user2@example.com&#34;</span>
+</span></span></code></pre></div><h3 id="automatically-generate-passwords">Automatically Generate Passwords</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass generate social/twitter <span style="color:#ae81ff">20</span>
+</span></span></code></pre></div><p>This generates a 20-character random password and saves it.</p>
+<h3 id="edit-encrypted-passwords">Edit Encrypted Passwords</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass edit personal/bank
+</span></span></code></pre></div><p>Opens the file in <code>$EDITOR</code> for advanced entries like username, URL, or notes.</p>
+<h3 id="search-passwords">Search Passwords</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pass grep bank
+</span></span></code></pre></div><p>Find entries containing the word &ldquo;bank&rdquo;.</p>
+<hr>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<h3 id="-pros">✅ Pros</h3>
+<ul>
+<li><strong>Simple &amp; Unix-friendly</strong>: Pure CLI, scriptable, and integrates with other Unix tools.</li>
+<li><strong>Secure</strong>: Uses GPG for encryption.</li>
+<li><strong>Portable</strong>: Stores plain files — easy to move, sync, and backup.</li>
+<li><strong>Version Controlled</strong>: Works seamlessly with Git.</li>
+<li><strong>Flexible</strong>: Supports multiple identities, folders, and password templates.</li>
+</ul>
+<h3 id="-cons">❌ Cons</h3>
+<ul>
+<li><strong>Command-line only</strong>: May intimidate users unfamiliar with CLI.</li>
+<li><strong>GPG complexity</strong>: Key management can be a hurdle.</li>
+<li><strong>No built-in password sharing</strong>: Requires manual Git or sync setup.</li>
+<li><strong>No browser integration by default</strong>: Requires third-party extensions or scripts.</li>
+</ul>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>If you’re comfortable with the terminal and value simplicity, control, and security, <strong>Pass</strong> is a rock-solid password manager. It avoids the bloat of modern GUI tools while giving you full transparency over your credentials. With Git and GPG, you get secure, auditable, and versioned password storage — the Unix way.</p>
+<p>Happy scripting — and stay secure!</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/security">security</a></li>
+              
+              <li><a href="/tags/linux">linux</a></li>
+              
+              <li><a href="/tags/password-manager">password manager</a></li>
+              
+              <li><a href="/tags/gpg">gpg</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Communication on OuterRealm</title>
+    <link>http://localhost:1313/categories/communication/</link>
+    <description>Recent content in Communication on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/communication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview of XMPP (Extensible Messaging and Presence Protocol)</title>
+      <link>http://localhost:1313/posts/xmpp-overview/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/xmpp-overview/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;XMPP (Extensible Messaging and Presence Protocol)&lt;/strong&gt; is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

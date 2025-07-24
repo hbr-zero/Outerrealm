@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Ranger File Manager Cheat Sheet - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A quick-reference cheat sheet for using Ranger, the terminal-based file manager." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/ranger-cheat-sheet-hugo/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Ranger File Manager Cheat Sheet">
+  <meta property="og:description" content="A quick-reference cheat sheet for using Ranger, the terminal-based file manager.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:tag" content="Ranger">
+    <meta property="article:tag" content="Terminal">
+    <meta property="article:tag" content="File Manager">
+    <meta property="article:tag" content="Cli">
+    <meta property="article:tag" content="Linux">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ranger File Manager Cheat Sheet">
+  <meta name="twitter:description" content="A quick-reference cheat sheet for using Ranger, the terminal-based file manager.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/contact">Contact</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Ranger File Manager Cheat Sheet</h1>
+          <div class="meta">Posted on Jul 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h1 id="-ranger-file-manager-cheat-sheet">🗂️ Ranger File Manager Cheat Sheet</h1>
+<h2 id="-navigation">🧭 Navigation</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>j</code></td>
+          <td>Move down</td>
+      </tr>
+      <tr>
+          <td><code>k</code></td>
+          <td>Move up</td>
+      </tr>
+      <tr>
+          <td><code>h</code></td>
+          <td>Go to parent directory</td>
+      </tr>
+      <tr>
+          <td><code>l</code></td>
+          <td>Enter directory or open file</td>
+      </tr>
+      <tr>
+          <td><code>gg</code> / <code>G</code></td>
+          <td>Top / bottom of list</td>
+      </tr>
+      <tr>
+          <td><code>H</code> / <code>L</code></td>
+          <td>Back / Forward in history</td>
+      </tr>
+      <tr>
+          <td><code>~</code></td>
+          <td>Go to home directory</td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td>Search</td>
+      </tr>
+      <tr>
+          <td><code>n</code> / <code>N</code></td>
+          <td>Next / previous search result</td>
+      </tr>
+      <tr>
+          <td><code>Ctrl+f</code> / <code>Ctrl+b</code></td>
+          <td>Page down / up</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-file-operations">📁 File Operations</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>yy</code></td>
+          <td>Yank (copy) selected file</td>
+      </tr>
+      <tr>
+          <td><code>dd</code></td>
+          <td>Cut (delete into buffer)</td>
+      </tr>
+      <tr>
+          <td><code>p</code></td>
+          <td>Paste from buffer</td>
+      </tr>
+      <tr>
+          <td><code>pp</code></td>
+          <td>Paste into current directory</td>
+      </tr>
+      <tr>
+          <td><code>x</code></td>
+          <td>Swap marked file with top of buffer</td>
+      </tr>
+      <tr>
+          <td><code>r</code></td>
+          <td>Rename file</td>
+      </tr>
+      <tr>
+          <td><code>cw</code></td>
+          <td>Change name (like rename)</td>
+      </tr>
+      <tr>
+          <td><code>a</code></td>
+          <td>Create new file</td>
+      </tr>
+      <tr>
+          <td><code>A</code></td>
+          <td>Create new directory</td>
+      </tr>
+      <tr>
+          <td><code>D</code></td>
+          <td>Delete file/directory</td>
+      </tr>
+      <tr>
+          <td><code>:bulkrename</code></td>
+          <td>Batch rename with <code>$EDITOR</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-bookmarks">🔖 Bookmarks</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>m&lt;key&gt;</code></td>
+          <td>Set bookmark (e.g. <code>ma</code>)</td>
+      </tr>
+      <tr>
+          <td><code>' &lt;key&gt;</code></td>
+          <td>Go to bookmark (e.g. <code>'a</code>)</td>
+      </tr>
+      <tr>
+          <td><code>`</code></td>
+          <td>Jump to the last directory</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-preview-and-sorting">🔍 Preview and Sorting</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>zi</code></td>
+          <td>Toggle file preview</td>
+      </tr>
+      <tr>
+          <td><code>zh</code></td>
+          <td>Toggle hidden files</td>
+      </tr>
+      <tr>
+          <td><code>or</code></td>
+          <td>Reverse sort</td>
+      </tr>
+      <tr>
+          <td><code>os</code></td>
+          <td>Sort by size</td>
+      </tr>
+      <tr>
+          <td><code>ot</code></td>
+          <td>Sort by modified time</td>
+      </tr>
+      <tr>
+          <td><code>on</code></td>
+          <td>Sort by name (default)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-commands-and-shell">⚙️ Commands and Shell</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key / Command</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>:</code></td>
+          <td>Enter command mode</td>
+      </tr>
+      <tr>
+          <td><code>!</code></td>
+          <td>Run shell command</td>
+      </tr>
+      <tr>
+          <td><code>:open_with</code></td>
+          <td>Open file with specific application</td>
+      </tr>
+      <tr>
+          <td><code>:cd &lt;path&gt;</code></td>
+          <td>Change directory</td>
+      </tr>
+      <tr>
+          <td><code>:set &lt;option&gt;</code></td>
+          <td>Change configuration</td>
+      </tr>
+      <tr>
+          <td><code>:help</code></td>
+          <td>View Ranger documentation</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-custom-keybind-example">🛠️ Custom Keybind Example</h2>
+<p>To open PDFs with Zathura:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;map zp shell zathura %f&#34;</span> &gt;&gt; ~/.config/ranger/rc.conf
+</span></span></code></pre></div><h2 id="-other-useful-features">🧩 Other Useful Features</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>space</code></td>
+          <td>Mark/unmark files</td>
+      </tr>
+      <tr>
+          <td><code>v</code></td>
+          <td>Toggle visual mode</td>
+      </tr>
+      <tr>
+          <td><code>Tab</code></td>
+          <td>Toggle preview window focus</td>
+      </tr>
+      <tr>
+          <td><code>u</code></td>
+          <td>Undo last operation</td>
+      </tr>
+      <tr>
+          <td><code>Ctrl+u</code></td>
+          <td>Toggle user interface elements</td>
+      </tr>
+      <tr>
+          <td><code>?</code></td>
+          <td>Show keybindings help</td>
+      </tr>
+  </tbody>
+</table>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/ranger">ranger</a></li>
+              
+              <li><a href="/tags/terminal">terminal</a></li>
+              
+              <li><a href="/tags/file-manager">file manager</a></li>
+              
+              <li><a href="/tags/cli">cli</a></li>
+              
+              <li><a href="/tags/linux">linux</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

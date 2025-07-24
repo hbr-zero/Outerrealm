@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tomb: A Simple and Secure Linux Encryption Tool - OuterRealm</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="An overview of Tomb, a CLI-based encryption tool for GNU/Linux that provides simple, powerful, and scriptable file encryption using LUKS and GnuPG." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/2025-07-23-tomb-encryption-overview/">
+  <meta property="og:site_name" content="OuterRealm">
+  <meta property="og:title" content="Tomb: A Simple and Secure Linux Encryption Tool">
+  <meta property="og:description" content="An overview of Tomb, a CLI-based encryption tool for GNU/Linux that provides simple, powerful, and scriptable file encryption using LUKS and GnuPG.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-23T00:00:00+00:00">
+    <meta property="article:tag" content="Encryption">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Privacy">
+    <meta property="article:tag" content="Tomb">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tomb: A Simple and Secure Linux Encryption Tool">
+  <meta name="twitter:description" content="An overview of Tomb, a CLI-based encryption tool for GNU/Linux that provides simple, powerful, and scriptable file encryption using LUKS and GnuPG.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">OuterRealm</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
+</svg></span>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Tomb: A Simple and Secure Linux Encryption Tool</h1>
+          <div class="meta">Posted on Jul 23, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="what-is-tomb">What is Tomb?</h2>
+<p><strong>Tomb</strong> is a free and open-source encryption tool for GNU/Linux that allows users to create encrypted storage containers (called <em>tombs</em>) and protect their keys with GnuPG. It’s designed to be <strong>scriptable</strong>, <strong>lightweight</strong>, and <strong>secure</strong>, making it ideal for privacy-focused users who prefer the terminal.</p>
+<p>Created by <a href="https://www.dyne.org/software/tomb/">Dyne.org</a>, Tomb uses <strong>LUKS (Linux Unified Key Setup)</strong> for strong encryption and <strong>GnuPG</strong> for key management.</p>
+<hr>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>🔐 <strong>Strong encryption</strong> using LUKS and dm-crypt</li>
+<li>🔑 <strong>GnuPG integration</strong> for securing keys with public-key cryptography</li>
+<li>📦 <strong>Portable containers</strong> that can be safely backed up or moved</li>
+<li>🧪 <strong>Scriptable CLI interface</strong>, perfect for automation</li>
+<li>🔒 <strong>Key and data separation</strong> — keys can be stored offline</li>
+<li>🧹 <strong>Self-destruct and forget options</strong> to erase keys or wipe data</li>
+</ul>
+<hr>
+<h2 id="how-tomb-works">How Tomb Works</h2>
+<p>Tomb separates the <em>container</em> (the encrypted file) from the <em>key</em> (used to unlock it):</p>
+<ol>
+<li>
+<p><strong>Create a tomb (container)</strong>:<br>
+<code>tomb dig secret.tomb -s 100</code><br>
+This creates a 100MB encrypted file.</p>
+</li>
+<li>
+<p><strong>Forge a key</strong>:<br>
+<code>tomb forge secret.key</code><br>
+Optionally protect the key with a GPG identity.</p>
+</li>
+<li>
+<p><strong>Lock the tomb with the key</strong>:<br>
+<code>tomb lock secret.tomb -k secret.key</code></p>
+</li>
+<li>
+<p><strong>Open the tomb</strong> (decrypt and mount):<br>
+<code>tomb open secret.tomb -k secret.key</code></p>
+</li>
+<li>
+<p><strong>Close the tomb</strong>:<br>
+<code>tomb close</code></p>
+</li>
+</ol>
+<p>You can now securely store private files inside the mounted volume.</p>
+<hr>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li>🕵️ Personal document encryption</li>
+<li>📁 Portable encrypted USB containers</li>
+<li>🛡️ Secure backups and archiving</li>
+<li>👥 Shared encrypted storage among trusted GPG identities</li>
+<li>🔐 Keeping secrets out of cloud storage systems</li>
+</ul>
+<hr>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Simple and lightweight</li>
+<li>Fully open-source</li>
+<li>No proprietary dependencies</li>
+<li>Flexible and script-friendly</li>
+<li>Separation of concerns (data vs key)</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Command-line only (no GUI)</li>
+<li>GnuPG usage can be complex for new users</li>
+<li>Requires root privileges for some operations</li>
+</ul>
+<hr>
+<h2 id="installation">Installation</h2>
+<p>On Debian/Ubuntu-based systems:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install tomb
+</span></span></code></pre></div><p>On Arch Linux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S tomb
+</span></span></code></pre></div><p>You can also install from source via the <a href="https://github.com/dyne/Tomb">Tomb GitHub repository</a>.</p>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Tomb offers a clean, minimal approach to file encryption for Linux users who are comfortable with the terminal. Its separation of key and data makes it particularly suitable for advanced users and those with strict security requirements.</p>
+<p>While it may not be beginner-friendly, Tomb shines in its simplicity, portability, and power. If you&rsquo;re looking for a trusted CLI encryption tool, Tomb is definitely worth exploring.</p>
+<hr>
+<p><em>Want to learn more? Visit the official Tomb website at <a href="https://www.dyne.org/software/tomb">https://www.dyne.org/software/tomb</a> or check out the <a href="https://github.com/dyne/Tomb">Tomb GitHub repo</a>.</em></p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/encryption">encryption</a></li>
+              
+              <li><a href="/tags/linux">linux</a></li>
+              
+              <li><a href="/tags/security">security</a></li>
+              
+              <li><a href="/tags/privacy">privacy</a></li>
+              
+              <li><a href="/tags/tomb">tomb</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © OuterRealm |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

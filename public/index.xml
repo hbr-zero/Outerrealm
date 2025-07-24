@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OuterRealm</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on OuterRealm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© OuterRealm</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/posts/about_outerrealm/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/about_outerrealm/</guid>
+      <description>&lt;h1 id=&#34;about-outerrealm&#34;&gt;About Outerrealm&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Outerrealm&lt;/strong&gt; is a space where technology meets transparency. Our mission is to explore, explain, and celebrate the world of &lt;strong&gt;Free and Open Source Software (FOSS)&lt;/strong&gt;. Whether you&amp;rsquo;re a seasoned sysadmin, a passionate developer, or just FOSS-curious, Outerrealm is here to be your companion on the journey.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;&#xA;&lt;p&gt;We&amp;rsquo;d love to hear from you! Whether you have a question, feedback, or just want to say hi — feel free to reach out using the methods below.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started with the Gemini Protocol</title>
+      <link>http://localhost:1313/posts/gemini_protocol_hugo_post/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/gemini_protocol_hugo_post/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-gemini-protocol&#34;&gt;What is the Gemini Protocol?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Gemini protocol&lt;/strong&gt; is a lightweight, privacy-focused internet protocol designed to offer a middle ground between Gopher and HTTP. It emphasizes simplicity, minimalism, and user privacy. Gemini serves content in a plaintext markup format called &lt;strong&gt;Gemtext&lt;/strong&gt;, intended to be viewed with specialized browsers called &lt;strong&gt;Gemini clients&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastering Vim: From Basics to Power User</title>
+      <link>http://localhost:1313/posts/mastering-vim-hugo-post/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mastering-vim-hugo-post/</guid>
+      <description>&lt;p&gt;Vim is a legendary text editor that has stood the test of time. Whether you&amp;rsquo;re writing code, editing configuration files, or drafting a quick note, Vim provides a fast, efficient, and highly customizable editing experience — once you get past the learning curve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Overview of XMPP (Extensible Messaging and Presence Protocol)</title>
+      <link>http://localhost:1313/posts/xmpp-overview/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/xmpp-overview/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;XMPP (Extensible Messaging and Presence Protocol)&lt;/strong&gt; is an open, decentralized communication protocol based on XML. Originally developed by the Jabber open-source community in 1999, it enables real-time messaging, presence information, and contact list maintenance. XMPP is widely used in instant messaging applications, IoT, social networks, and enterprise messaging systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pass: The Standard Unix Password Manager</title>
+      <link>http://localhost:1313/posts/pass-password-manager/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pass-password-manager/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In a world dominated by complex password requirements and increasing cyber threats, managing credentials securely and simply is critical. Enter &lt;strong&gt;Pass&lt;/strong&gt;, the standard Unix password manager. It’s lightweight, command-line-driven, and relies on tried-and-true tools: &lt;strong&gt;GPG&lt;/strong&gt; for encryption and &lt;strong&gt;Git&lt;/strong&gt; for version control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ranger File Manager Cheat Sheet</title>
+      <link>http://localhost:1313/posts/ranger-cheat-sheet-hugo/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ranger-cheat-sheet-hugo/</guid>
+      <description>&lt;h1 id=&#34;-ranger-file-manager-cheat-sheet&#34;&gt;🗂️ Ranger File Manager Cheat Sheet&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-navigation&#34;&gt;🧭 Navigation&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;j&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Move down&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;k&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Move up&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;h&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Go to parent directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;l&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Enter directory or open file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;gg&lt;/code&gt; / &lt;code&gt;G&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Top / bottom of list&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;H&lt;/code&gt; / &lt;code&gt;L&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Back / Forward in history&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;~&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Go to home directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;/&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Search&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;n&lt;/code&gt; / &lt;code&gt;N&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Next / previous search result&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Ctrl+f&lt;/code&gt; / &lt;code&gt;Ctrl+b&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Page down / up&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-file-operations&#34;&gt;📁 File Operations&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;yy&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Yank (copy) selected file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;dd&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Cut (delete into buffer)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Paste from buffer&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;pp&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Paste into current directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;x&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Swap marked file with top of buffer&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;r&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Rename file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;cw&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Change name (like rename)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;a&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Create new file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Create new directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Delete file/directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:bulkrename&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Batch rename with &lt;code&gt;$EDITOR&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-bookmarks&#34;&gt;🔖 Bookmarks&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;m&amp;lt;key&amp;gt;&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Set bookmark (e.g. &lt;code&gt;ma&lt;/code&gt;)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;&#39; &amp;lt;key&amp;gt;&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Go to bookmark (e.g. &lt;code&gt;&#39;a&lt;/code&gt;)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;`&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Jump to the last directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-preview-and-sorting&#34;&gt;🔍 Preview and Sorting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;zi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Toggle file preview&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;zh&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Toggle hidden files&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;or&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Reverse sort&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;os&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Sort by size&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;ot&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Sort by modified time&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;on&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Sort by name (default)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-commands-and-shell&#34;&gt;⚙️ Commands and Shell&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key / Command&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Enter command mode&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;!&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Run shell command&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:open_with&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Open file with specific application&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:cd &amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Change directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:set &amp;lt;option&amp;gt;&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Change configuration&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;:help&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;View Ranger documentation&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-custom-keybind-example&#34;&gt;🛠️ Custom Keybind Example&lt;/h2&gt;&#xA;&lt;p&gt;To open PDFs with Zathura:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ranger: A Terminal-Based File Manager You’ll Love</title>
+      <link>http://localhost:1313/posts/ranger-file-manager-blog/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ranger-file-manager-blog/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/ranger/ranger/master/screenshots/screenshot1.png&#34; alt=&#34;Ranger File Manager&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-ranger&#34;&gt;What Is Ranger?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ranger/ranger&#34;&gt;Ranger&lt;/a&gt; is a terminal-based file manager with a minimalistic and efficient interface. It provides a &lt;strong&gt;vi-like keybinding&lt;/strong&gt; system, multi-pane directory views, and customizable behavior, making it a favorite among Linux power users and terminal lovers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rsync: Powerful File Transfer and Synchronization Tool</title>
+      <link>http://localhost:1313/posts/rsync-overview-usage/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rsync-overview-usage/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;rsync&lt;/code&gt; is a fast, reliable, and versatile file-copying tool commonly used on Unix-like systems. It efficiently transfers and synchronizes files between machines and directories by only copying the differences between source and destination. Whether you&amp;rsquo;re backing up a home directory, syncing production servers, or replicating data across systems, &lt;code&gt;rsync&lt;/code&gt; is a must-have utility in your toolbox.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tomb: A Simple and Secure Linux Encryption Tool</title>
+      <link>http://localhost:1313/posts/2025-07-23-tomb-encryption-full-overview/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-07-23-tomb-encryption-full-overview/</guid>
+      <description>&lt;h2 id=&#34;what-is-tomb&#34;&gt;What is Tomb?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tomb&lt;/strong&gt; is a free and open-source encryption tool for GNU/Linux that allows users to create encrypted storage containers (called &lt;em&gt;tombs&lt;/em&gt;) and protect their keys with GnuPG. It’s designed to be &lt;strong&gt;scriptable&lt;/strong&gt;, &lt;strong&gt;lightweight&lt;/strong&gt;, and &lt;strong&gt;secure&lt;/strong&gt;, making it ideal for privacy-focused users who prefer the terminal.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Top 10 Secure Messaging Platforms Compared</title>
+      <link>http://localhost:1313/posts/top-10-secure-messaging-platforms/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/top-10-secure-messaging-platforms/</guid>
+      <description>&lt;p&gt;In an age where digital communication is constant and privacy threats are ever-evolving, secure messaging apps are more critical than ever. This post compares 10 of the most secure messaging platforms based on encryption, open-source status, privacy policies, and usability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Welcome to &lt;a href=&#34;https://outerrealm.net&#34;&gt;OuterRealm&lt;/a&gt; you will not find any BS here, only tech and stuff. The stuff in question will vary and the tech is whatever we feel is worthy to share. If you enjoy the content then please keep returning and share with others. If you do not like the content then before making judgment please reach out and let us know how we can do better.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
